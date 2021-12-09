@@ -1,0 +1,85 @@
+.register-iner{
+    height: 540px;
+    width: 500px;
+    background-color:#F0F2F5;
+    border: 2px solid #FFFFFF;
+    border-radius: 10px;
+    margin-left: 500px;
+    margin-top: 20px;
+    animation: modalShow 0.4s linear;
+  }
+  .register-head{
+    font-size: 30px;
+    color: blue;
+    text-align: center;
+  }
+  .register-input1,.register-input2{
+    height: 40px;
+    width: 200px;
+    border-radius: 10px;
+    border: 2px solid grey;
+  }
+  .register-input1{
+    margin-left: 30px;
+  }
+  .register-input2{
+    margin-left: 20px;
+  }
+  .register-input3,.register-input4{
+    height: 40px;
+    width: 430px;
+    margin-left: 30px;
+    border-radius: 10px;
+    border: 2px solid grey;
+    margin-top: 15px;
+  }
+  ::placeholder{
+    color: grey;
+    font-size: 17px;
+  }
+  .register-input1,.register-input2,.register-input3,.register-input4:focus{
+    color: black;
+  }
+  .register-head1{
+    margin-left: 30px;
+  }
+  #day{
+    width: 123px;
+    height: 40px;
+    margin-left: 30px;
+    border-radius: 5px;
+    border: 2px solid gray;
+  }
+  #month{
+    width: 123px;
+    height: 40px;
+    border-radius: 5px;
+    margin-left: 30px;
+    border: 2px solid gray;
+  }
+  #year{
+    width: 123px;
+    height: 40px;
+    border-radius: 5px;
+    margin-left: 30px;
+    border: 2px solid gray;
+  }
+  .register-head2{
+    margin-left: 30px;
+  }
+  ul,li{
+    list-style: none;
+    margin-left: 5px;
+  }
+  .register-but{
+    height: 40px;
+    width: 200px;
+    background-color: #00A400;
+    border: 2px solid white;
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+    margin-left: 150px;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
