@@ -1,7 +1,7 @@
 body{
 	margin: 0px;
 	padding: 0px;
-	background-color: #FFFFFF;
+	background-color: #FFFF;
 }
 .trangChu{
 	height: 175px;
@@ -99,4 +99,49 @@ body{
 
 
 */
+
+.trangChu-under-left,.trangChu-under-right{
+	height: 400px;
+	width: 400px;
+	margin-left: 190px;
+	display: inline-block;
+	padding: 20px;
+}
+.trangChu-under-left{
+	position: relative;
+	top: 52px;
+}
+.trangChu-under-right{
+	position: relative;
+	top: 25px;
+	right: 100px;
+}
+.trangChu-under-1{
+	height: 180px;
+	width: 600px;
+	border: 1px solid grey;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	padding-bottom: 20px;
+}
+.trangChu-under-left-pictrue,.trangChu-under-left-title{
+	display: inline-block;
+}
+.trangChu-under-left-title,.trangChu-under-left-head{
+	position: relative;
+	bottom: 130px;
+	text-decoration: none;
+}
+.trangChu-under-left-title{
+	font-size: 20px;
+	color: #2E3192;
+	font-family: Merriweather;
+}
+.trangChu-under-left-head{
+	position: relative;
+	left: 300px;
+	font-size: 17px;
+}
+
 

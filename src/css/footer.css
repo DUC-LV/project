@@ -1,0 +1,53 @@
+@font-face {
+    font-family:font_strong;
+    src:url('../fonts/Captureit.ttf') format('truetype'),
+    url('../fonts/Captureit.eot#iefix') format('embedded-opentype'),
+    url('../fonts/Captureit.woff') format('woff');
+    font-weight:normal;
+    font-style:normal;
+   }
+   body{
+       margin: 0px;
+       padding: 0px;
+   }
+   .footer-head-title{
+       border-left: 4px solid #ed1c24;
+       margin-left: 190px;
+       padding-left: 5px;
+       color: #2e3192;
+       cursor: pointer;
+   }
+   .footer-head-pictrue{
+       position: relative;
+       left: 190px;
+   }
+   .footer-footer{
+       height: 140px;
+       width: 100%;
+       background-color:#2e3192;
+       margin-top: 60px;
+   }
+   a{
+       text-decoration: none;
+   }
+   .footer-footer-pictrue{
+       margin-left: 190px;
+       margin-top: 10px;
+   }
+   .footer-footer-pictrue,.footer-footer-title{
+       display: inline-block;
+   }
+   .footer-footer-title{
+       position: relative;
+       bottom: 90px;
+       left: 10px;
+       font-size: 14px;
+       color: white;
+   }
+   .footer-footer-title1,.footer-footer-title2{
+       position: relative;
+       left: 325px;
+       bottom: 105px;
+       color: white;
+   }
+   
