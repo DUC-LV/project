@@ -1,22 +1,16 @@
-import Header from './components/Header';
-import Menu from './components/Menu_admin';
 import './App.css';
-import './css/header.css';
-import './css/Modal_login.css';
-import './css/Modal_register.css';
-import './css/Menu_admin.css';
+import Login from './components/Login';
+import './css/login.css';
+
+
 
 
 function App() {
   return (
-    <>
       <div>
-        <Header />
+        <Login />
       </div>
-      <div>
-        <Menu />
-      </div>
-    </>  
+     
   );
 }
 

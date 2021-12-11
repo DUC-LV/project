@@ -1,14 +1,12 @@
 import React from 'react';
 import Modal_login from './Modal_login';
-import Modal_register from './Modal_register';
 import {useState} from 'react';
 
 
 
 
-function Header() {
+function User() {
     const [openModal,setOpenModal] = useState(false);
-    const [showModal,setShowModal] = useState(false);
     return (
         <>
         <div className="header">
@@ -22,14 +20,10 @@ function Header() {
                 <button className="head-but1" 
                 onClick = {() => {setOpenModal(true);}}>
                 Đăng Nhập</button>
-                <button className="head-but2" 
-                onClick = {() => {setShowModal(true);}}>
-                Tạo Tài Khoản</button>
                 </div>
         </div>
         {openModal && <Modal_login closeModal ={setOpenModal} />}
-        {showModal && <Modal_register closesModal ={setShowModal} />}
         </>
     );
 }
-export default Header;
+export default User;

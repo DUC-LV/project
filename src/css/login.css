@@ -1,0 +1,85 @@
+body{
+	margin: 0px;
+	padding: 0px;
+	background-color: #F0F2F5;
+}
+.left-image,.left-title{
+	display: inline-block;
+}
+.left-title{
+	font-size: 30px;
+	color: blue;
+	position: relative;
+	bottom: 30px;
+	left: 20px;
+	font-family: Georgia, serif;
+}
+.left,.right{
+	display: inline-block;
+	margin-left: 200px;
+}
+.left-head{
+	font-size: 25px;
+	font-family: Georgia, serif;
+}
+.right{
+	height: 400px;
+	width: 400px;
+	border: 2px solid #FFFFFF;
+	background-color: #FFFFFF;
+	border-radius: 10px;
+	position: relative;
+	top: 100px;
+}
+.right-head{
+	text-align: center;
+	font-size: 30px;
+	color: blue;
+	font-family: Georgia, serif;
+}
+.right-input1{
+	height: 50px;
+	width: 350px;
+	border: 2px solid grey;
+	border-radius: 10px;
+	margin-left: 22px;
+}
+.right-input2{
+	height: 50px;
+	width: 350px;
+	border: 2px solid grey;
+	border-radius: 10px;
+	margin-left: 22px;
+	margin-top: 20px;
+}
+::placeholder{
+	color: grey;
+	font-size: 17px;
+}
+.right-button1{
+	height: 50px;
+	width: 350px;
+	border: 2px solid white;
+	border-radius: 10px;
+	margin-left: 22px;
+	background-color: #00A400;
+	margin-top: 20px;
+	font-size: 20px;
+	color: white;
+	cursor: pointer;
+	font-family: Georgia, serif;
+}
+
+.right-link{
+	text-decoration: none;
+	text-align: center;
+	color: black;
+	font-family: Georgia, serif;
+}
+.right-link:hover{
+	color: blue;
+	box-shadow: 0 3px yellow;
+}
+.right-link-head{
+	font-size: 20px;
+}
