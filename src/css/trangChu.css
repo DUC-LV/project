@@ -30,18 +30,30 @@ body{
 	background-color: #F0EFF4;
 	right: 70px;
 }
-.text{
+.text1,.text2,.text3{
 	font-size: 20px;
 	text-align: center;
-	color: grey;
-
+	font-weight: bold;
 }
-.value{
+.text1,.value1{
+	color:#ED1C24;
+}
+.text2,.value2{
+	color:#28A745;
+}
+.text3,.value3{
+	color:#333333;
+}
+.value1,.value2,.value3{
 	font-size: 20px;
 	text-align: center;
 	position: relative;
 	bottom: 15px;
-	color: grey;
+	font-weight: bold;
+}
+.trangChu-main{
+	position: relative;
+	top: 60px;
 }
 .trangChu-left{
 	width: 810px;
@@ -56,6 +68,7 @@ body{
 	text-decoration: none;
 	font-size: 30px;
 	color: black;
+	font-weight: bold;
 }
 .trangChu-left-title{
 	font-size: 20px;
@@ -66,34 +79,39 @@ body{
 .trangChu-right{
 	width: 350px;
 	float: left;
+	position: relative;
+	bottom: 10px;
 }
 .trangChu-right-title{
 	height: 20px;
 	width: 350px;
-	border-left: 4px solid blue;
+	border-left: 6px solid blue;
 	position: relative;
 	bottom: 15px;
 }
 .trangChu-left-title-title{
 	font-size: 20px;
-	margin-left: 4px;
+	margin-left: 11px;
 	color: #2E3192;
 	font-family: Merriweather;
 }
 .trangChu-right-title1{
-	width: 350px;
+	width: 420px;
 	height: 600px;
 	border: 1px solid grey;
 	background-color:#F0F8FF;
 	border-radius: 10px;
+	margin-left: 15px;
 }
 .trangChu-right-title1-heading{
 	text-align: center;
+	font-size: 23px;
 }
 .right-heading{
-	font-size: 16px;
+	font-size: 17px;
 	color: #2E3192;
 	font-family: Merriweather;
+	margin-left:3px;
 }
 /*
 
@@ -113,7 +131,7 @@ body{
 }
 .trangChu-under-right{
 	position: relative;
-	top: 25px;
+	top: 37px;
 	right: 100px;
 }
 .trangChu-under-1{
@@ -130,16 +148,17 @@ body{
 }
 .trangChu-under-left-title,.trangChu-under-left-head{
 	position: relative;
-	bottom: 130px;
+	bottom: 90px;
 	text-decoration: none;
 }
 .trangChu-under-left-title{
 	font-size: 20px;
 	color: #2E3192;
 	font-family: Merriweather;
+	left:72px;
+	font-weight: bold;
 }
 .trangChu-under-left-head{
-	position: relative;
 	left: 300px;
 	font-size: 17px;
 }

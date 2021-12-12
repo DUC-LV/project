@@ -1,15 +1,21 @@
 import './App.css';
-import Login from './components/Login';
+import './css/trangchu.css';
 import './css/login.css';
+import Login from './components/Login';
+import Admin from './components/Admin/Admin';
+import {BrowserRouter as Router,Link,Route} from 'react-router-dom';
 
 
 
 
 function App() {
   return (
-      <div>
-        <Login />
-      </div>
+    <>
+      <Router>
+        <Route path ="/" component ={Login}></Route>
+        <Route path ="/admin" component ={Admin}></Route>
+      </Router>
+    </>
      
   );
 }

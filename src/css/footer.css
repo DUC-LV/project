@@ -1,11 +1,3 @@
-@font-face {
-    font-family:font_strong;
-    src:url('../fonts/Captureit.ttf') format('truetype'),
-    url('../fonts/Captureit.eot#iefix') format('embedded-opentype'),
-    url('../fonts/Captureit.woff') format('woff');
-    font-weight:normal;
-    font-style:normal;
-   }
    body{
        margin: 0px;
        padding: 0px;
@@ -20,6 +12,9 @@
    .footer-head-pictrue{
        position: relative;
        left: 190px;
+       height: 80px;
+       width:200px;
+       padding: 20px;
    }
    .footer-footer{
        height: 140px;
