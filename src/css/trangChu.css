@@ -7,10 +7,11 @@ body{
 	height: 175px;
 	width: 100%;
 }
-.title{
+.title_trangchu{
 	font-size: 25px;
 	color: blue;
-	margin-left: 190px;
+	margin-left: 40px;
+	text-decoration: underline;
 }
 .box1,.box2,.box3{
 	height: 80px;

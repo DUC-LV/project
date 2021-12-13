@@ -5,10 +5,10 @@ function Menu() {
         <div className = "menu-top">
             <div className="list-menu">
                 <ul>
-                    <a href="#">
+                    <a href="/trangchu">
                         <li>Trang Chủ</li>
                     </a>
-                    <a href="#">
+                    <a href="/bantin">
                         <li>Bản Tin Covid-19</li>
                     </a>
                     <a href="#">

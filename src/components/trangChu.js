@@ -1,10 +1,12 @@
 import React from 'react';
+import '../css/trangchu.css';
 
 function Trangchu(){
     return (
         <div className="trangchu">
             <div className="trangchu-head">
-                <h3 className="title">Trang Chủ</h3>
+                <h3 className="title_trangchu">Trang Chủ</h3>
+                <br></br>
                 <div className="box1">
                     <p className="text1">Số ca nhiễm</p>
                     <p className="value1">1.398.413</p>

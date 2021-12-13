@@ -1,10 +1,9 @@
 import './App.css';
-import './css/trangchu.css';
-import './css/login.css';
-import Login from './components/Login';
-import Admin from './components/Admin/Admin';
-import {BrowserRouter as Router,Link,Route} from 'react-router-dom';
-
+import './css/user.css';
+import './css/menu_admin.css';
+import Home_admin from './components/Admin/Home_admin';
+import './css/Modal_login.css';
+import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 
 
 
@@ -12,8 +11,11 @@ function App() {
   return (
     <>
       <Router>
-        <Route path ="/" component ={Login}></Route>
-        <Route path ="/admin" component ={Admin}></Route>
+        <Routes>
+          <Route path ="/" element ={<Home_admin/>} />
+          <Route path ="/trangchu" element ={<Home_admin/>} />
+          <Route path ="/bantin" element ={<Home_admin/>} />
+        </Routes>
       </Router>
     </>
      

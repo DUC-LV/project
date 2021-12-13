@@ -5,7 +5,7 @@ import {useState} from 'react';
 
 
 
-function User() {
+function Header_user() {
     const [openModal,setOpenModal] = useState(false);
     return (
         <>
@@ -26,4 +26,4 @@ function User() {
         </>
     );
 }
-export default User;
+export default Header_user;

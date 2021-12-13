@@ -2,7 +2,7 @@ import React from 'react';
 import Modal_register from './Modal_register';
 import {useState} from 'react';
 
-function Admin(){
+function Header_admin(){
     const [showModal,setShowModal] = useState(false);
     return (
         <>
@@ -23,4 +23,4 @@ function Admin(){
       </>
     );
 }
-export default Admin;
+export default Header_admin;
