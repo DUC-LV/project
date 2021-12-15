@@ -4,6 +4,8 @@ import Footer from '../Footer';
 import Menu_Admin from './Menu_admin';
 import Trangchu  from "../Trangchu";
 import Bantin from '../Bantin';
+import Vaccin from '../Vaccin';
+import Xemthongtin from '../Xemthongtin';
 
 
 function Home_admin(props){
@@ -22,9 +24,16 @@ function Home_admin(props){
                 {
                     pathname === '/bantin' ? < Bantin /> : ''
                 }
+                {
+                    pathname === '/vaccin' ? < Vaccin /> : ''
+                }
+                {
+                    pathname === '/xemthongtin' ? < Xemthongtin /> : ''
+                }
                 
             </div>
-            <br></br> <br></br>
+            <br></br> <br></br> <br></br> <br></br> <br></br> <br></br>
+            <br></br> <br></br> <br></br> <br></br> <br></br>
             <Footer />
         </div>
     );

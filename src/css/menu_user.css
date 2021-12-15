@@ -1,0 +1,16 @@
+.menu-user ul {
+    margin: 0px;
+    padding: 0px;
+}
+.menu-user_list{
+    width: 100%;
+    font-size: 20px;
+    height: 30px;
+    background-color:#2E3192;
+}
+ul li {
+    float: left;
+    margin-left: 40px;
+    color: white;
+    list-style: none;
+  }

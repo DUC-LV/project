@@ -1,6 +1,7 @@
 import React from 'react';
 import Modal_register from './Modal_register';
 import {useState} from 'react';
+import '../../css/header.css';
 
 function Header_admin(){
     const [showModal,setShowModal] = useState(false);

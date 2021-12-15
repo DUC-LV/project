@@ -11,10 +11,10 @@ function Menu() {
                     <a href="/bantin">
                         <li>Bản Tin Covid-19</li>
                     </a>
-                    <a href="#">
+                    <a href="/vaccin">
                         <li>Vaccin-Tiêm Chủng</li>
                     </a>
-                    <a href="#">
+                    <a href="/xemthongtin">
                         <li>Xem Thông Tin</li>
                     </a>
                 </ul>
