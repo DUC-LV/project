@@ -1,3 +1,4 @@
+
 .register-iner{
     height: 540px;
     width: 500px;
@@ -6,7 +7,7 @@
     border-radius: 10px;
     margin-left: 500px;
     margin-top: 20px;
-    animation: modalShow 0.4s linear;
+    animation: modalShow 0.8s linear;
   }
   .register-head{
     font-size: 30px;
