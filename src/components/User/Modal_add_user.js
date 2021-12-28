@@ -2,13 +2,14 @@ import React from "react";
 import '../../css/modal_add_user.css';
 import {nanoid} from 'nanoid';
 import {useState} from 'react';
-import data from '../../mock-data.json';
 
 
 
 
-function Modal_add_user ({closesModal}){ 
-    const [contacks,setcontacks] = useState(data);
+
+function Modal_add_user ({closesModal,addNewContact}){ 
+
+    
     const [addFormData,setAddFormData] = useState({
         Name : '',
         Number : '',
@@ -39,9 +40,11 @@ function Modal_add_user ({closesModal}){
             Date1: addFormData.Date1,
             Date2: addFormData.Date2,
         };
-        const newContacts = [ ...contacks, newContact];
-        setcontacks(newContacts);
+        
+        addNewContact(newContact);
+        closesModal(false);
     };
+    
     
     
     return(
@@ -91,14 +94,14 @@ function Modal_add_user ({closesModal}){
             />
             <input 
                 type="text" 
-                placeholder="Ngày Tủ Vong" 
+                placeholder="Ngày Tử Vong" 
                 className="input0" 
                 name = "Date2"
                 onChange={handleAddFormChange}    
             />
             <br />
             <button className ="button0"
-            onSubmit = {handleAddFormSubmit}
+            onClick = {handleAddFormSubmit}
             >Submit</button>
             <button className ="button0"
             onClick = {() => {closesModal(false);}}
@@ -107,5 +110,4 @@ function Modal_add_user ({closesModal}){
         </form>
     );
 }
-
 export default Modal_add_user;

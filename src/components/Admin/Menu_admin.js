@@ -17,6 +17,9 @@ function Menu() {
                     <a href="/xemthongtin">
                         <li>Xem Thông Tin</li>
                     </a>
+                    <a href="/bieudo">
+                        <li>Biểu Đồ</li>
+                    </a>
                 </ul>
             </div>
         </div>

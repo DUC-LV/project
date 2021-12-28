@@ -16,6 +16,7 @@ function App() {
         <Route path ="/bantin" element ={<Home_admin/>} />
         <Route path ="/vaccin" element ={<Home_admin/>} />
         <Route path ="/xemthongtin" element ={<Home_admin/>} />
+        <Route path ="/bieudo" element ={<Home_admin/>} />
       </Routes>
     </Router>
   </>

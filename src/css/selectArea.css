@@ -1,0 +1,43 @@
+.select{
+    height: 30px;
+    width: 100px;
+    border-radius: 10px;
+    margin-left: 40px;
+    margin-top:30px;
+}
+.FormValue{
+    margin-left: 240px;
+    margin-top: 40px;
+}
+.ValueCases,.ValueCuredCase,.ValueDeaths{
+    height: 80px;
+    width: 300px;
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    font-size: 17px;
+}
+.ValueCases{
+    border-left: 5px solid red;
+    border-bottom:1px solid gray;
+    color: #ED1C24;
+    position: relative;
+}
+.ValueCuredCase{
+    border-left: 5px solid orange;
+    border-bottom:2px solid gray;
+    position: relative;
+    left: 40px;
+    color: #28A745;
+}
+.ValueDeaths{
+    border-left: 5px solid grey;
+    border-bottom:1px solid gray;
+    position: relative;
+    left: 80px;
+    color: #333333;
+}
+.title-value{
+    position: relative;
+    bottom: 10px;
+}

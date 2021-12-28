@@ -6,9 +6,9 @@ import Trangchu  from "../Trangchu";
 import Bantin from '../Bantin';
 import Vaccin from '../Vaccin';
 import Xemthongtin from '../Xemthongtin';
+import Chart from '../chart/Chart';
 
-
-function Home_admin(props){
+function Home_admin(){
 
     const pathname = window.location.pathname;
     console.log(pathname);
@@ -29,6 +29,9 @@ function Home_admin(props){
                 }
                 {
                     pathname === '/xemthongtin' ? < Xemthongtin /> : ''
+                }
+                {
+                    pathname === '/bieudo' ? < Chart /> : ''
                 }
                 
             </div>

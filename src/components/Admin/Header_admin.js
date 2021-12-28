@@ -3,6 +3,7 @@ import Modal_register from './Modal_register';
 import {useState} from 'react';
 import '../../css/header.css';
 
+
 function Header_admin(){
     const [showModal,setShowModal] = useState(false);
     return (
@@ -18,7 +19,7 @@ function Header_admin(){
                 <button className="head-but2" 
                 onClick = {() => {setShowModal(true);}}>
                 Tạo Tài Khoản</button>
-                </div>
+            </div> 
       </div>
       {showModal && <Modal_register closesModal ={setShowModal} />}
       </>
