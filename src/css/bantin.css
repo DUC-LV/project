@@ -1,0 +1,15 @@
+body{
+	margin: 0px;
+	padding: 0px;
+	background-color: #FFFF;
+}
+.bantin-head{
+        font-size: 25px;
+	color: blue;
+	margin-left: 20px;
+	text-decoration: underline;
+}
+.bantin-main-left{
+        margin-left: 80px;
+        margin-top: 30px;
+}

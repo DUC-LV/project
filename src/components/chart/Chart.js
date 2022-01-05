@@ -7,6 +7,7 @@ function Chart() {
         <>
             <SelectArea />
             
+            
         </>
     );
 }

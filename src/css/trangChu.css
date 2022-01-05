@@ -3,6 +3,12 @@ body{
 	padding: 0px;
 	background-color: #FFFF;
 }
+.bantin-head{
+        font-size: 25px;
+	color: blue;
+	margin-left: 20px;
+	text-decoration: underline;
+}
 .trangChu{
 	height: 175px;
 	width: 100%;
