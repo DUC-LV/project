@@ -44,6 +44,11 @@ const globalData =
                 CuredCase:1100,
                 Death:10,
             },
+            // "27/12/2021":{
+            //     Cases:4020,
+            //     CuredCase:1140,
+            //     Death:100,
+            // },
         },
         "Thành Phố Hồ Chí Minh":
         {
@@ -174,20 +179,20 @@ function Chart() {
               labels: Object.keys(dataCharts),
               datasets: [{
                 data: valuesData.map((item) => (item.Cases)),
-                label: 'Cases',
-                borderColor: '#3333ff',
+                label: 'Số ca mắc',
+                borderColor: '#ED1C24',
                 fill: true,
               }, {
                 data: valuesData.map((item) => (item.Death)),
-                label: 'Death',
-                borderColor: 'red',
-                backgroundColor: 'rgba(255, 0, 0, 0.5)',
+                label: 'Số ca tử vong',
+                borderColor: '#333333',
+                // backgroundColor: 'rgba(255, 0, 0, 0.5)',
                 fill: true,
               },  {
                 data: valuesData.map((item) => (item.CuredCase)),
-                label: 'CuredCase',
-                borderColor: 'green',
-                backgroundColor: 'rgba(0, 255, 0, 0.5)',
+                label: 'Số ca khỏi',
+                borderColor: 'orange',
+                // backgroundColor: 'rgba(0, 255, 0, 0.5)',
                 fill: true,
               },
             ],

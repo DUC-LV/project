@@ -2,8 +2,10 @@
     height: 30px;
     width: 100px;
     border-radius: 10px;
-    margin-left: 40px;
+    margin-left: 20px;
     margin-top:30px;
+    position: relative;
+    right: 155px;
 }
 .FormValue{
     margin-left: 240px;
@@ -22,6 +24,7 @@
     border-bottom:1px solid gray;
     color: #ED1C24;
     position: relative;
+    right: 350px;
 }
 .ValueCuredCase{
     border-left: 5px solid orange;
@@ -34,10 +37,16 @@
     border-left: 5px solid grey;
     border-bottom:1px solid gray;
     position: relative;
-    left: 80px;
+    left: 0px;
     color: #333333;
+    bottom: 82px;
 }
 .title-value{
     position: relative;
     bottom: 10px;
+}
+.linechart{
+    position: relative;
+    right: 110px;
+    color: blue;
 }

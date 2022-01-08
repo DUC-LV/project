@@ -74,7 +74,7 @@ function SelectArea ({selectProps}){
                 </div>
             </div>
 {/*Biểu đồ*/}
-            <h1>LineChart</h1>
+            <h1 className="linechart">Biểu đồ</h1>
             
         </form>
     );
