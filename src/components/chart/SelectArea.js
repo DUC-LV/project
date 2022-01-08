@@ -1,86 +1,76 @@
 import React from "react";
 import '../../css/selectArea.css';
-import { useState } from "react";
+import { useState, useEffect } from "react";
 //import{LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 // import {  Line } from "react-chartjs-2";
 
+function SelectArea ({selectProps}){
+    const [listAreas, setListAreas] = useState(selectProps.listAreas);
+    const [currentArea, setCurrentArea] = useState(selectProps.listAreas && selectProps.listAreas[0]);
+    const [data, setData] = useState(selectProps.data);
+    const listDate = Object.keys(data);
+    const [currentDate, setCurrentDate] = useState(listDate[listDate.length - 1]);
 
-
-
-function SelectArea (){
-    
-    const [area,setArea] = useState(-1);
-    const [data,setData] = useState({
-        Cases:0,
-        CuredCase:0,
-        Death:0,
+    useEffect(() => {
+        setData(selectProps.data);
     });
-    const [listDate,setDate] = useState();
+
+    useEffect(() => {
+        setCurrentDate(listDate[listDate.length - 1]);
+    }, [currentArea]);
+
     const handleSelectArea = (e) =>{
-        const ans = +e.target.value;
-        if(ans < 0){
-            setDate(null);
-            return ;
-        }
-        const txt = dataChart[Areas[ans]];
-        console.log("a",txt);
-        const dates = Object.keys(txt);
-        console.log("k",dates);
-        setDate(dates);
-        console.log("b",dates[dates.length-1]);
-        setData(txt[dates[dates.length-1]]);
+        const area = e.target.value;
+        setCurrentArea(area);
+        selectProps.handleChangeArea(area);
     }
     
     const handleSelectDay = (event) =>{
-        const day = +event.target.value;
-        if(day < 0){
-            setDate(null);
-            return;
-        }
-        const days = dataChart[Areas[day]];
-        console.log("d",days);
-        const fist_day = Object.keys(days);
-        console.log("h",fist_day);
-        setDate(fist_day);
-        //console.log("ta",fist_day[fist_day.length-1]);
-        for(let i = 0; i < fist_day.length;i++){
-            console.log("ta",fist_day[fist_day.length-1-i]);
-            setData(days[fist_day[fist_day.length-1-i]]);
-        }
+        const day = event.target.value;
+        setCurrentDate(day);
     }
-    const Areas = Object.keys(dataChart);
     return(
         <form>
 {/*Select Area */} 
             <select className="select" onChange={handleSelectArea}>
-                <option value={-1}>Khu Vực</option>
-                { Areas && Areas.map((option,index) => (
-                <option value={index}>{option}</option>
-                ))} 
+                { listAreas && listAreas.map((area, index) =>
+                    {
+                        if(currentArea === area) {
+                            return (<option value={area} selected>{area}</option>);
+                        }else{
+                            return (<option value={area}>{area}</option>);
+                        }
+                    }
+                )} 
             </select>
 
             <select className="select" onChange={handleSelectDay}>
-                <option value={-1}>Ngày</option>
-                {listDate && listDate.map((item,index)=>(
-                    <option value={index}>{item}</option>
-                ))}
+                {listDate && listDate.map((date,index)=>
+                    {
+                        if(currentDate === date) {
+                            return (<option value={date} selected>{date}</option>);
+                        } else{
+                            return (<option value={date}>{date}</option>);
+                        }
+                    }
+                )}
             </select>
 {/*Hiển thị value*/}            
             <div className="FormValue">
                 <div className="ValueCases">
                     <p>Số ca mắc</p>
                     <p className="title-value"
-                    >{data.Cases}</p>
+                    >{data[currentDate].Cases}</p>
                 </div>
                 <div className="ValueCuredCase">
                     <p>Số ca khỏi</p>
                     <p className="title-value"
-                    >{data.CuredCase}</p>
+                    >{data[currentDate].CuredCase}</p>
                 </div>
                 <div className="ValueDeaths">
                     <p>Số ca tử vong</p>
                     <p className="title-value"
-                    >{data.Death}</p>
+                    >{data[currentDate].Death}</p>
                 </div>
             </div>
 {/*Biểu đồ*/}
@@ -92,7 +82,6 @@ function SelectArea (){
 export default SelectArea;
 const dataChart =
     {   
-        
         "Hà Nội" : {
                 "20/12/2021":{
                     Cases:1200,
