@@ -68,3 +68,8 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Hi Mr. @⁨‪+84 98 702 63 02‬⁩ Mr. @⁨‪+84 98 982 62 71‬⁩ please your support to change the following texts in home page of TV360:
+
+1. TV360 by Bitel
+2. TV360 - TV en VIVO GRATIS - ¡Encuentra tus películas y series favoritas!
+3. Copyright ©️ 2023 Bitel Perú. Todos los derechos reservados.
